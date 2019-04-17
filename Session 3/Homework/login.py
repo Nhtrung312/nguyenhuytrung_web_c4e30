@@ -1,15 +1,37 @@
 from flask import Flask, render_template,request,url_for
 app = Flask(__name__)
 
+account = [
+  {
+    'user' : 'trung312',
+    'pass': 'trung312'
+      },
+  {
+    'user':'trung123',
+    'pass':'trung123'
+
+     },
+  {
+    'user':'trung321',
+    'pass':'trung321'
+  }
+]
 
 @app.route('/',methods=['POST'])
 def login():
     username = request.form.get('username')
     password = request.form.get('password')
-    if username == 'nhtrung312' and password == 'trung312' :
-        return render_template('login1.html')
-    else : 
-        return render_template('login2.html')
+    ktra = 0
+    #ktra đáp án 
+    for v in account :
+      if username == v['user']  and password == v['pass'] :
+        ktra = 1
+        
+
+    if ktra==1 :
+        return render_template('success.html')
+    else :
+        return render_template('fail.html')
     
 @app.route('/')
 def get():
