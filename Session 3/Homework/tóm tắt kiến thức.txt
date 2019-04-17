@@ -1,0 +1,5 @@
+Tóm t?t ki?n th?c bu?i 2 : 
+- h?c v? 2 cách th?c : Post ( dùng d? l?y thông tin t? máy ch? v? tuy nhiên có th? làm thay d?i thông tin trên máy ch? ) 
+			Get ( dùng d? l?y thông tin trên máy ch? v? web browser ) 
+- h?c v? html : request.form.get ( dùng trong hàm post , c?p nh?t giá tr? t? nh?ng gì ta type vào trong form )
+		form , table : cách t?o ra b?ng , k? dòng c?t 
