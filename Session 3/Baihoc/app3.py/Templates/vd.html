@@ -7,7 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Login Failed ! </h1>
+    {% for v in data %}
+        {{v.food}} 
+        {{v.price}}
+        <img src={{v.img}} >
+    {% endfor %} 
+        
     
 </body>
 </html>
