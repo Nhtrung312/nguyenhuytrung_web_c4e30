@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <table>
+            <label > mon an moi ;</label>
+        </table>
+    </form>
+
+    {% for v in foods %}
+        <td>mon an :{{v.food}}</td> <br>
+        <td>gia tien : {{v.price}}</td><br>
+    {% endfor %}
+
+    
+</body>
+</html>

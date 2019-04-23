@@ -9,13 +9,13 @@
 <body>
     <form method = POST>
         <label >Ten mon :</label>
-        <input  name='ten_mon' />
+        <input  name='ten_mon' value={{food.food}} />
         
         <br>
         <br>
         
         <label for="">giá :</label>
-        <input name='gia'>
+        <input name='gia'value={{food.price}}>
         
         <br>
         <br>
@@ -33,19 +33,7 @@
         </tr>
         
         
-        
-        {% for v in data %}
-        <tr>
-            <td>{{v.food}}</td>
-            <td> {{v.price}} </td>
-            <td ><img src={{v.anh}} width="100" height="100"></td>
-            
-            
-            
-        </tr>
-    
-        
-        {% endfor %}
+      
     </table> 
 
     
